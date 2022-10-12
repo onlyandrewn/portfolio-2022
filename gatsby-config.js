@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio 2022`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Andrew Nguyen | Journalist and developer`,
+    siteUrl: `https://www.andrewnguyen.ca`
   },
-  plugins: ["gatsby-plugin-styled-components"]
+  plugins: [
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-sass"
+  ]
 };

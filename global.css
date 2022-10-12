@@ -1,0 +1,35 @@
+@font-face {
+	"font-family": 'Graphik Bold';
+	"font-weight": 700;
+	"font-display": swap;
+	"font-style": bold;
+	"font-named-instance": 'Bold';
+	"src": url("../fonts/Graphik-Bold.woff") format("woff");
+}
+
+@font-face {
+	"font-family": 'Graphik Regular';
+	"font-weight": 400;
+	"font-display": swap;
+	"font-style": normal;
+	"font-named-instance": 'Regular';
+	"src": url("../fonts/Graphik-Regular.woff") format("woff");
+}
+
+@font-face {
+	"font-family": 'Tiempos Headline';
+	"font-weight": 700;
+	"font-display": swap;
+	"font-style": bold;
+	"font-named-instance": 'Bold';
+	"src": url("../fonts/TiemposHeadline-Bold.woff") format("woff");
+}
+
+@font-face {
+	"font-family": 'Tiempos Text';
+	"font-weight": 400;
+	"font-display": swap;
+	"font-style": normal;
+	"font-named-instance": 'Regular';
+	"src": url("../fonts/TiemposText-Regular.woff") format("woff");
+}
