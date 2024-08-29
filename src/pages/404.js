@@ -6,6 +6,7 @@ const pageStyles = {
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
+
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
@@ -15,6 +16,7 @@ const headingStyles = {
 const paragraphStyles = {
   marginBottom: 48,
 }
+
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
@@ -23,7 +25,7 @@ const codeStyles = {
   borderRadius: 4,
 }
 
-const NotFoundPage = () => {
+export default function NotFoundPage() {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>Page not found</h1>
@@ -43,7 +45,5 @@ const NotFoundPage = () => {
     </main>
   )
 }
-
-export default NotFoundPage
 
 export const Head = () => <title>Not found</title>

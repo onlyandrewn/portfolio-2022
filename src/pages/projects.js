@@ -1,12 +1,14 @@
-import * as React from "react"
+import React from "react";
+import Project from "../components/Project";
+import projects from "../content/projects.json";
+import ProjectStyles from "../styles/ProjectStyles";
 
-const IndexPage = () => {
+export default function ProjectsPage() {
   return (
-    <main>
-    </main>
-  )
+      <ProjectStyles>
+        {projects.map(project => (
+          <Project key={project.slug} project={project} />
+        ))}
+      </ProjectStyles>
+  );
 }
-
-export default IndexPage
-
-export const Head = () => <title>Home Page</title>
