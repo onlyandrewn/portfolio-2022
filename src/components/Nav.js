@@ -132,7 +132,7 @@ export default function Nav() {
 			<div className="link__group">
 				<Link to="/about" className="link link-about">About</Link>
 				<Link to="/projects" className="link link-projects">Projects</Link>
-				<Link to="/contact" className="link link-contact">Contact</Link>
+				<a href="mailto:info@andrewnguyen.ca" className="link link-contact">Contact</a>
 			</div>
 		</NavStyles>
 	);

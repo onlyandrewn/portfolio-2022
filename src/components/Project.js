@@ -25,13 +25,11 @@ export default function Project({project}) {
 
 	return (
 		<div className={slug} key={project.project_slug}>
-			{image && <GatsbyImage image={image} className="project__image" alt={project.project_name} />}
+			{image && <GatsbyImage image={image} className="project__image" alt={project.image_caption} />}
 			
-			<p className="project__id">{project.order}</p>
 			<p className="project__publication">{project.publication}</p>
-
 			<div className="project__name-wrapper">
-				<a href={project.url} className="project__name">{project.project_name}</a>
+				<a href={project.project_url} className="project__name">{project.project_name}</a>
 			</div>
 
 			<p className="project__date">Published {project.publish_date}</p>

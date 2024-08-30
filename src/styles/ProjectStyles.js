@@ -1,22 +1,42 @@
 import styled from "styled-components";
 
 const ProjectStyles = styled.div`
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-row-gap: 48px;
-	grid-column-gap: 48px;
-	margin: 48px;
+	// border: 5px solid red;
+
+	.category__header {
+		font-family: "Graphik";
+		// margin: 0;
+		margin-left: 48px;
+		margin-right: 48px;
+		margin-top: 48px;
+		margin-bottom: 24px;
+		padding-bottom: 8px;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 700;
+		border-bottom: 3px solid #000;
+	}
+
+	.category__projects {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-row-gap: 32px;
+		grid-column-gap: 32px;
+		margin: 48px;
+		margin-top: 0;
+	}
 
 	.project {
-		border: 2px solid transparent;
+		border: 3px solid transparent;
 		border-radius: 3px;
+		padding: 16px;
 		// padding: 8px;
 
-		// &:hover,
-		// &:focus {
-		// 	border: 2px solid #0C65F6;
-		// 	// cursor: pointer;
-		// }
+		&:hover,
+		&:focus {
+			border: 3px solid #000;
+			cursor: pointer;
+		}
 	}
 	
 	// .project__type {
@@ -44,13 +64,19 @@ const ProjectStyles = styled.div`
 		font-size: 32px;
 		margin: 0;
 		// color: #0C65F6;
+		color: #000;
 		display: inline;
 		text-decoration: none;
+
+		&:visited {
+			color: #000;
+		}
 	}
 
 	.project__desc {
 		font-family: "Tiempos Text";
 		line-height: 1.5;
+		margin-bottom: 0;
 	}
 
 	.project__link {
