@@ -7,6 +7,20 @@ const SidebarStyles = styled.aside`
 	font-weight: 700;
 	margin-top: 48px;
 	margin-left: 48px;
+	flex: 2;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		padding-top: 16px;
+		// position: fixed;
+		// border: 1px solid red;
+	}
+
+	ul li {
+		list-style-type: none;
+		padding-bottom: 16px;
+	}
 
 	.sidebar__group {
 		margin-bottom: 24px;

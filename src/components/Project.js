@@ -25,6 +25,7 @@ export default function Project({project}) {
 
 	return (
 		<div className={slug} key={project.project_slug}>
+			<a href={project.project_url} className="project__link" target="_blank">
 			{image && <GatsbyImage image={image} className="project__image" alt={project.image_caption} />}
 			
 			<p className="project__publication">{project.publication}</p>
@@ -34,6 +35,7 @@ export default function Project({project}) {
 
 			<p className="project__date">Published {project.publish_date}</p>
 			<p className="project__desc">{project.project_description}</p>
+			</a>
 		</div>
 	);
 };

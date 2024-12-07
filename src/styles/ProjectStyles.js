@@ -3,6 +3,14 @@ import styled from "styled-components";
 const ProjectStyles = styled.div`
 	// border: 5px solid red;
 
+	.test {
+		display: flex;
+	}
+
+	// .projects {
+	// 	flex: 10;
+	// }
+
 	.category__header {
 		font-family: "Graphik";
 		// margin: 0;
@@ -11,17 +19,24 @@ const ProjectStyles = styled.div`
 		margin-top: 48px;
 		margin-bottom: 24px;
 		padding-bottom: 8px;
+		padding-top: 16px;
 		font-size: 18px;
 		text-transform: uppercase;
 		font-weight: 700;
 		border-bottom: 3px solid #000;
 	}
 
+	// #news-app-database {
+	// 	padding-top: 0;
+	// }
+
 	.category__projects {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-row-gap: 32px;
-		grid-column-gap: 32px;
+		// grid-row-gap: 32px;
+		// grid-column-gap: 32px;
+		grid-row-gap: 24px;
+		grid-column-gap: 24px;
 		margin: 48px;
 		margin-top: 0;
 	}
@@ -80,20 +95,26 @@ const ProjectStyles = styled.div`
 	}
 
 	.project__link {
-		font-family: "Graphik Bold";
-		font-weight: 700;
-		
-		text-transform: uppercase;
-		font-size: 12px;
 		text-decoration: none;
-		padding-bottom: 2px;
 		color: #000;
-		border-bottom: 2px solid #000;
 
-		&:hover {
-			color: #0074D9;
-			border-bottom: 2px solid #0C65F6;
+		&:visited {
+			color: #000;
 		}
+		// font-family: "Graphik Bold";
+		// font-weight: 700;
+		
+		// text-transform: uppercase;
+		// font-size: 12px;
+		// text-decoration: none;
+		// padding-bottom: 2px;
+		// color: #000;
+		// border-bottom: 2px solid #000;
+
+		// &:hover {
+		// 	color: #0074D9;
+		// 	border-bottom: 2px solid #0C65F6;
+		// }
 	}
 
 	.project__info {

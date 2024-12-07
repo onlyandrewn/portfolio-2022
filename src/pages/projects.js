@@ -3,6 +3,7 @@ import Project from "../components/Project";
 import Sidebar from "../components/Sidebar";
 import projects from "../content/projects.json";
 import ProjectStyles from "../styles/ProjectStyles";
+// import styled from 'styled-components';
 
 export default function ProjectsPage() {
   const sortedProjects = projects.sort((a, b) => {
@@ -28,10 +29,10 @@ export default function ProjectsPage() {
   })
 
   return (
-    <div class="test">
+    <ProjectStyles>
+    <div className="test">
       <Sidebar />
-
-      <ProjectStyles>
+      
       <div className="projects">
       {categoryOrder.map(category => {
         const categoryId = category
@@ -52,7 +53,7 @@ export default function ProjectsPage() {
         );
       })}
       </div>
-      </ProjectStyles>
     </div>
+    </ProjectStyles>
   );
 }

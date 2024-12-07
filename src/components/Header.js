@@ -1,12 +1,18 @@
 import React from 'react';
+import BackgroundImage from 'gatsby-background-image';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 import Button from '../components/Button';
 import { FaCheckCircle } from 'react-icons/fa';
 
 const HeaderStyles = styled.header`
+	h1 {
+		margin: 0;
+	}
+
 	color: #fff;
-	padding: 48px;
+	// padding: 48px;
 	// padding-top: 48px;
 	// padding-bottom: 48px;
 	background: #000;
@@ -14,7 +20,7 @@ const HeaderStyles = styled.header`
 	position: relative;
 
 	.header__info {
-		border: 1px solid red;
+		// border: 1px solid red;
 		// position: absolute;
 		// bottom: 32px;
 		// left: 32px;
@@ -48,8 +54,28 @@ const HeaderStyles = styled.header`
 `;
 
 export default function Header() {
+
+	const data = useStaticQuery(graphql`
+		query {
+			desktop: file(relativePath: {eq: "header.jpeg" }) {
+				childImageSharp {
+					fluid(quality: 90, maxWidth: 1920) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+		}	
+	`);
+
+	const imageData = data.desktop.childImageSharp.fluid;
+
 	return (
 		<HeaderStyles>
+			<BackgroundImage
+				Tag="div"
+				fluid={imageData}
+				style={{ height: 'calc(100vh - 79.8px)' }}
+			>
 			<div className="header__info">
 				<h1>Crafting digital experiences</h1>
 				<p className="header__desc">Andrew Nguyen is a journalist and developer at the Boston Globe, where he builds news apps and interactives.</p>
@@ -58,6 +84,7 @@ export default function Header() {
 				</p>
 				<Button />
 			</div>
+			</BackgroundImage>
 		</HeaderStyles>
 	);
 }

@@ -33,11 +33,11 @@ const Typography = createGlobalStyle`
 
     h1 {
         font-family: "Tiempos Headline";
-		font-size: 64px;
+		// font-size: 64px;
 		margin: 0;
-		margin-bottom: 8px;
+		// margin-bottom: 8px;
 		// width: 500px;
-		line-height: 1;
+		// line-height: 1;
     }
 
     // a {

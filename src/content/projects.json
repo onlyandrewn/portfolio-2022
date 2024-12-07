@@ -19,8 +19,8 @@
     "project_slug": "st-louis-school-guide",
     "project_category": "News app / database",
     "publication": "St. Louis Post-Dispatch",
-    "publish_date": "February 2020",
-    "publish_date_num": "02-17-2020",
+    "publish_date": "June 2017",
+    "publish_date_num": "06-01-2017",
     "project_description": "The St. Louis school guide gives you the tools they need to make informed decisions about your child’s education. It simplifies the process and helps parents navigate the numbers by putting the state’s key performance measures in one place.",
     "image_type": "jpg",
     "image_caption": "On the left is the St. Louis Post-Dispatch logo. Below the logo is the text, 'School Guide' and the description, 'How does your school and district stack up?'. To the right of the text, the Weatherbird mascot is dressed as a teacher with a white dress shirt, red bow tie and khahi shorts. It has an exclamation mark above its head. It is holding a ruler and pointing to a chalkboard.",
@@ -134,7 +134,7 @@
     "publish_date": "October 2020",
     "publish_date_num": "10-01-2020",
     "project_description": "In addition to a traditional editorial that argues that the former vice president can restore the integrity of the presidency and set the country on a better path, the Globe editorial board makes 12 cases for 12 different kinds of voters.",
-    "image_type": "jpg",
+    "image_type": "png",
     "image_caption": "An illustration of Joe Biden and Kamala Harris by Peter and Maria Hoey.",
     "project_url": "https://apps.bostonglobe.com/opinion/graphics/2020/10/biden-endorsement/",
     "award": ""
@@ -316,7 +316,7 @@
     "publish_date": "September 2023",
     "publish_date_num": "09-26-2023",
     "project_description": "Harvard economist Raj Chetty's research shows that Americans' life trajectories are influenced by where they grow up. That holds in Greater Boston. Poor children raised in the blue-shaded census tracts had higher household incomes.",
-    "image_type": "jpeg",
+    "image_type": "png",
     "image_caption": "A choropleth map of Greater Boston by census tracts showing how Americans' life trajectories are profoundly influenced by where they grow up.",
     "project_url": "https://public.flourish.studio/visualisation/15523889/",
     "award": ""
@@ -372,7 +372,7 @@
     "publish_date": "October 2021",
     "publish_date_num": "10-01-2021",
     "project_description": "Every major American city has swaths of neighborhoods coping with high poverty and joblessness. There are places that aren't just poor, they're isolated. These residents have little interaction with people from better-off neighborhoods.",
-    "image_type": "jpeg",
+    "image_type": "png",
     "image_caption": "A choropleth map of Boston by neighborhood showing areas of high poverty and joblessness, where residents have little interaction with people from better-off neighborhoods.",
     "project_url": "https://public.flourish.studio/story/2072112/",
     "award": ""
@@ -428,7 +428,7 @@
     "publish_date": "March 2021",
     "publish_date_num": "03-31-2021",
     "project_description": "The American Society of Civil Engineers gave the nation’s infrastructure a grade of C-, an improvement from a D+ four years ago. While there was improvement in some categories, 11 of the 17 categories received D’s.",
-    "image_type": "jpeg",
+    "image_type": "png",
     "image_caption": "A table showing the grades the American Society of Civil Engineers gave to the nation’s infrastructure from 1988 to 2021.",
     "project_url": "https://public.flourish.studio/visualisation/15524113/",
     "award": ""

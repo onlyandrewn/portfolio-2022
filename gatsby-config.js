@@ -14,6 +14,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Andrew Nguyen | Crafting digital experiences`,
+        short_name: `Andrew Nguyen`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/images/favion.png`
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
