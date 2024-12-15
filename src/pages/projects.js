@@ -3,7 +3,6 @@ import Project from "../components/Project";
 import Sidebar from "../components/Sidebar";
 import projects from "../content/projects.json";
 import ProjectStyles from "../styles/ProjectStyles";
-// import styled from 'styled-components';
 
 export default function ProjectsPage() {
   const sortedProjects = projects.sort((a, b) => {
@@ -12,7 +11,7 @@ export default function ProjectsPage() {
     return dateB - dateA;
   })
 
-  const categoryOrder = ["News app / database", "Special presentation", "Interactive"];
+  const categoryOrder = ["Special presentation", "Interactive graphics", "News app / database"];
   const groupedProjects = {};
 
   projects.forEach(project => {

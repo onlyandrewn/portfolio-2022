@@ -31,6 +31,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-anchor-links`
+    `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-react-helmet`
   ],
 };

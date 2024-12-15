@@ -7,14 +7,24 @@ const NavStyles = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 48px;
-	padding-right: 48px;
+	padding-left: 24px; // Previously 48px
+	padding-right: 24px; // Previously 48px
 	padding-top: 16px;
 	padding-bottom: 16px;
 
+	.dropdown {
+		display: none;
+		// position: absolute;
+		// top: 0;
+		// right: 0;
+		// z-index: 25;
+		// width: 100%;
+		// height: 7px;
+		// background: #f6a302;
+	}
+
 	.link {
 		margin-right: 48px;
-
 		text-decoration: none;
 		color: #fff;
 		font-weight: 700;
@@ -32,7 +42,8 @@ const NavStyles = styled.nav`
 
 		&:hover,
 		&:focus {
-			border-bottom: 2px solid var(--white);
+			color: var(--orange);
+			border-bottom: 2px solid var(--orange);
 		}
 	}
 
@@ -41,12 +52,6 @@ const NavStyles = styled.nav`
 	.link-contact {
 		font-size: 12px;
 	}
-
-	// .link-about,
-	// .link-projects {
-	// 	position: relative;
-	// 	top: 3px;
-	// }
 
 	.link-projects {
 		margin-right: 32px;
@@ -68,8 +73,9 @@ const NavStyles = styled.nav`
 
 		&:focus,
 		&:hover {
-			background: var(--white);
-			color: #000;
+			background: var(--orange);
+			color: var(--white);
+			border: 1px solid var(--orange);
 		}
 	}
 
@@ -109,9 +115,11 @@ const NavStyles = styled.nav`
 		}
 	}
 
-	&[aria-current="page"] {
-		color: red;
-	}
+	// .link-about,
+	// .link-projects {
+	// 	position: relative;
+	// 	top: 3px;
+	// }
 
 	@media (max-width: 768px) {
 		padding-left: 36px;
@@ -126,11 +134,12 @@ const NavStyles = styled.nav`
 export default function Nav() {
 	return (
 		<NavStyles>
+			<div className="dropdown"></div>
 			<Link to="#main" className="skip" tabIndex="-1">Skip to main content</Link>
 			<Link to="/" className="link link-name">Andrew Nguyen</Link>
 
 			<div className="link__group">
-				<Link to="/about" className="link link-about">About</Link>
+				{/* <Link to="/about" className="link link-about">About</Link> */}
 				<Link to="/projects" className="link link-projects">Projects</Link>
 				<a href="mailto:info@andrewnguyen.ca" className="link link-contact">Contact</a>
 			</div>

@@ -13,8 +13,6 @@ const SidebarStyles = styled.aside`
 		margin: 0;
 		padding: 0;
 		padding-top: 16px;
-		// position: fixed;
-		// border: 1px solid red;
 	}
 
 	ul li {
@@ -26,18 +24,14 @@ const SidebarStyles = styled.aside`
 		margin-bottom: 24px;
 
 		&.is-active {
-			color: #0C65F6;
-			color: orange;
+			color: var(--orange);
 		}
 	}
 
 	.sidebar__link {
 		font-size: 16px;
 		text-decoration: none;
-		// padding: 16px;
-		// border: 1px solid transparent;
-		// border-radius: 5px;
-		// padding-bottom: 4px;
+		color: #000;
 
 		&:visited {
 			color: #000;
@@ -45,21 +39,9 @@ const SidebarStyles = styled.aside`
 
 		&:hover {
 			text-decoration: underline;
+			color: var(--orange);
 		}
-		
-		// &:focus,
-		// &:active {
-		// 	color: #0C65F6;
-		// 	background: orange;
-		// 	color: #000;
-		// }
 	}
-
-	// .sidebar__list-item {
-	// 	&:hover {
-	// 		color: #0074D9;
-	// 	}
-	// }
 
 	@media (max-width: 768px) {
 		display: none;
@@ -70,9 +52,9 @@ export default function Sidebar() {
 	return (
 		<SidebarStyles>
 			<ul>
-				<li><AnchorLink to="#news-app-database" className="sidebar__link">News apps / databases</AnchorLink></li>
 				<li><AnchorLink to="#special-presentation" className="sidebar__link">Special presentation</AnchorLink></li>
-				<li><AnchorLink to="#interactive" className="sidebar__link">Interactive</AnchorLink></li>
+				<li><AnchorLink to="#interactive-graphics" className="sidebar__link">Interactive graphics</AnchorLink></li>
+				<li><AnchorLink to="#news-app-database" className="sidebar__link">News apps / databases</AnchorLink></li>
 			</ul>
 		</SidebarStyles>
 	);

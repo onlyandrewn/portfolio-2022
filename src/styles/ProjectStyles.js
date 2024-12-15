@@ -1,15 +1,9 @@
 import styled from "styled-components";
 
 const ProjectStyles = styled.div`
-	// border: 5px solid red;
-
 	.test {
 		display: flex;
 	}
-
-	// .projects {
-	// 	flex: 10;
-	// }
 
 	.category__header {
 		font-family: "Graphik";
@@ -25,10 +19,6 @@ const ProjectStyles = styled.div`
 		font-weight: 700;
 		border-bottom: 3px solid #000;
 	}
-
-	// #news-app-database {
-	// 	padding-top: 0;
-	// }
 
 	.category__projects {
 		display: grid;
@@ -67,10 +57,6 @@ const ProjectStyles = styled.div`
 	.project__image {
 		background: #ddd;
 		height: 250px;
-	}
-
-	.project__name-wrapper {
-
 	}
 
 	.project__name {

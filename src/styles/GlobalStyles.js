@@ -1,13 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
-// import bg from "../assets/images/bg.svg"
-// import stripes from "../assets/images/stripes.svg"
 
 const GlobalStyles = createGlobalStyle`
     :root {
         --black: #000000;
         --white: #FFFFFF;
-        --red: red;
-        --blue: #0C65F6
+		--orange: #F7A303;
     }
 
 	button {
