@@ -35,7 +35,7 @@ const HeaderStyles = styled.header`
 	}
 
 	.header__desc {
-		margin-bottom: 20px;
+		margin-bottom: 24px;
 		padding-bottom: 5px;
 		// padding-left: 15px;
 		max-width: 500px;
@@ -51,7 +51,7 @@ const HeaderStyles = styled.header`
 		display: flex;
 		align-content: center;
 		padding-top: 0;
-		padding-bottom: 16px;
+		padding-bottom: 24px;
 	}
 
 	.header__availability-text {
