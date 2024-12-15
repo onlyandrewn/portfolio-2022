@@ -17,11 +17,7 @@ const HeaderStyles = styled.header`
 	}
 
 	color: #fff;
-	// padding: 48px;
-	// padding-top: 48px;
-	// padding-bottom: 48px;
 	background: #000;
-	// height: calc(100vh - 175px);
 	height: calc(100vh - 79.8px);
 	position: relative;
 
@@ -30,18 +26,15 @@ const HeaderStyles = styled.header`
     	bottom: 4%;
     	padding-left: 24px;
     	width: 45%;
-		// height: calc(100vh - 79.8px);
 		z-index: 100;
 	}
 
 	.header__desc {
 		margin-bottom: 24px;
 		padding-bottom: 5px;
-		// padding-left: 15px;
 		max-width: 500px;
 		width: 88%;
 		color: #fff;
-		font-weight: 300;
 		font-size: 22px;
 		font-family: Graphik-Regular;
 		line-height: 1.3;
@@ -76,17 +69,10 @@ const HeaderStyles = styled.header`
 	.photo__credit {
 	    color: #fff;
     	position: absolute;
-    	// float: right;
-    	// bottom: 16px;
 		bottom: 4%;
     	right: 24px;
 		font-family: "Graphik Light";
 		display: inline-block;
-		// margin-left: 12px;
-		// padding: 3px;
-		// padding-right: 6px;
-		// padding-left: 6px;
-		// border-radius: 3px;
 		font-size: 10px;
 		z-index: 100;
 	}
@@ -97,7 +83,6 @@ const HeaderStyles = styled.header`
 		left: 0;
 		background-color: rgba(0, 0, 0, .4);
 		height: calc(100vh - 79.8px);
-		// min-height: 100vh;
 		width: 100%;
 		z-index: 99;
 	}
@@ -124,10 +109,6 @@ export default function Header() {
 
 	const imageData = data.desktop.childImageSharp.fluid;
 
-	const downloadResume = () => {
-		console.log("Download resume");
-	}
-
 	return (
 		<HeaderStyles>
 			<div className="overlay"></div>
@@ -139,7 +120,7 @@ export default function Header() {
 					<p className="header__availability-text">Available for teaching opportunities</p>
 				</div>
 
-				<Button onClick={downloadResume} />
+				<a href="resume.pdf" style={{ textDecoration: "none" }}><Button/></a>
 			</div>
 
 			<p className="photo__credit">Photo by Pam Lau</p>
