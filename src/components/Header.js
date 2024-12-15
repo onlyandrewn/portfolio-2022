@@ -3,6 +3,7 @@ import BackgroundImage from 'gatsby-background-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
+// import Dropdown from '../components/Dropdown';
 import Button from '../components/Button';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -110,6 +111,8 @@ export default function Header() {
 	const imageData = data.desktop.childImageSharp.fluid;
 
 	return (
+		<>
+		{/* <Dropdown /> */}
 		<HeaderStyles>
 			<div className="overlay"></div>
 			<div className="header__info">
@@ -132,5 +135,6 @@ export default function Header() {
 			>
 			</BackgroundImage>
 		</HeaderStyles>
+		</>
 	);
 }

@@ -61,6 +61,10 @@ const NavStyles = styled.nav`
 		font-size: 24px;
 		padding: 0;
 		border-bottom: none;
+
+		// &:hover {
+		// 	color: var(--orange);
+		// }
 	}
 
 	.link-contact {
@@ -85,6 +89,7 @@ const NavStyles = styled.nav`
 	}
 
 	.link-name {
+		padding: 16px;	
 		padding-left: 0;
 	}
 
@@ -121,12 +126,21 @@ const NavStyles = styled.nav`
 	// 	top: 3px;
 	// }
 
-	@media (max-width: 768px) {
-		padding-left: 36px;
-		padding-right: 36px;
+	// @media (max-width: 480px) {
+	// 	.link-name {
+	// 		font-size: 18px;
+	// 		margin-right: 24px;
+	// 	}
+	// }
 
+	@media (max-width: 480px) {
 		.link-name {
-			font-size: 20px;
+			font-size: 16px;
+			margin-right: 16px;
+		}
+
+		.link-projects {
+			margin-right: 16px;
 		}
 	}
 `;
@@ -139,7 +153,6 @@ export default function Nav() {
 			<Link to="/" className="link link-name">Andrew Nguyen</Link>
 
 			<div className="link__group">
-				{/* <Link to="/about" className="link link-about">About</Link> */}
 				<Link to="/projects" className="link link-projects">Projects</Link>
 				<a href="mailto:info@andrewnguyen.ca" className="link link-contact">Contact</a>
 			</div>

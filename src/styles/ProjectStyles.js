@@ -25,8 +25,8 @@ const ProjectStyles = styled.div`
 		grid-template-columns: repeat(3, 1fr);
 		// grid-row-gap: 32px;
 		// grid-column-gap: 32px;
-		grid-row-gap: 24px;
-		grid-column-gap: 24px;
+		grid-row-gap: 16px;
+		grid-column-gap: 16px;
 		margin: 48px;
 		margin-top: 0;
 	}
@@ -38,7 +38,8 @@ const ProjectStyles = styled.div`
 		// padding: 8px;
 
 		&:hover,
-		&:focus {
+		&:focus,
+		&:active {
 			border: 3px solid #000;
 			cursor: pointer;
 		}
@@ -161,10 +162,36 @@ const ProjectStyles = styled.div`
 		width: 100%;
 	}
 
+	@media (max-width: 1200px) {
+		.category__projects {
+			grid-template-columns: 1fr 1fr;
+			grip-row-gap: 12px;
+			grip-column-gap: 12px;
+		}
+
+		// .project__name {
+		// 	font-size: 24px;
+		// }
+
+		// .project__desc {
+		// 	font-size: 16px;
+		// }
+	}
+
 	@media (max-width: 768px) {
-		grid-template-columns: 1fr;
-		margin: 36px;
-		grid-row-gap: 36px;
+		.category__projects {
+			grid-template-columns: 1fr;
+			margin: 24px;
+		}
+
+		.category__header {
+			margin-left: 24px;
+			margin-right: 24px;
+		}
+	
+		// grid-template-columns: 1fr;
+		// margin: 36px;
+		// grid-row-gap: 36px;
 
 		// .project__desc {
 		// 	margin-bottom: 16px;
