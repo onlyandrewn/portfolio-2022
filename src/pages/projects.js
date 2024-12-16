@@ -3,7 +3,7 @@ import Project from "../components/Project";
 import Sidebar from "../components/Sidebar";
 import projects from "../content/projects.json";
 import ProjectStyles from "../styles/ProjectStyles";
-import SEO from "../components/seo";
+// import SEO from "../components/seo";
 
 export default function ProjectsPage() {
   const sortedProjects = projects.sort((a, b) => {
@@ -30,12 +30,12 @@ export default function ProjectsPage() {
 
   return (
     <>
-    <SEO 
+    {/* <SEO 
       title="Andrew Nguyen | Projects"
-      description="TKTK"
+      description="Explore work from Andrew Nguyen. He specializes in special presentations, interactive graphics and news apps."
       image="/header.jpeg"
-      url="https://andrewnguyen.ca/projects"
-    />
+      url="https://andrewnguyen.ca/projects/"
+    /> */}
 
     <ProjectStyles>
     <div className="test">
