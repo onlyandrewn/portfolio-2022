@@ -3,7 +3,7 @@ module.exports = {
     title: "Andrew Nguyen | Crafting digital experiences",
     description: "Andrew Nguyen is a journalist and developer at the Boston Globe, where he builds news apps and interactives.",
     author: "Andrew Nguyen",
-    imageUrl: "/images/header.jpeg",
+    image: "header.jpeg",
     url: "https://andrewnguyen.ca/",
     twitterHandle: "@onlyandrewn"
   },

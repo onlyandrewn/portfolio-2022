@@ -4,8 +4,7 @@ import SEO from "../components/seo";
 import Header from '../components/Header';
 
 export default function IndexPage({ data }) {
-  const { title, description, author, imageUrl, url, twitterHandle } = data.site.siteMetadata;
-  const imageUrl = getSrc(data.shareImage)
+  const { title, description, author, image, url, twitterHandle } = data.site.siteMetadata;
 
   return (
     <>
@@ -13,7 +12,7 @@ export default function IndexPage({ data }) {
         title={title} 
         description={description}
         author={author}
-        image={imageUrl}
+        image={`${url}${image}`}
         url={url}
         twitterHandle={twitterHandle} 
       />
@@ -34,10 +33,5 @@ export const query = graphql`
         twitterHandle
       }
     }
-    shareImage: file(relativePath: { eq: "header.jpeg "}) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    }
   }
-`
+`;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 
-const SEO = ({title, description, author, imageUrl, url, twitterHandle }) => {
+const SEO = ({title, description, author, image, url, twitterHandle }) => {
 
 	return (
 		<Helmet>
@@ -13,7 +13,7 @@ const SEO = ({title, description, author, imageUrl, url, twitterHandle }) => {
 			{/* Open Graph metadata */}
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={description} />
-			<meta property="og:image" content={imageUrl}/>
+			<meta property="og:image" content={image}/>
 			<meta property="og:url" content={url} />
 			<meta property="og:type" content="website" />
 
