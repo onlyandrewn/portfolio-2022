@@ -24,18 +24,19 @@ export default function Project({project}) {
 	const image = getImage(imageNode);
 
 	return (
-		<div className={slug} key={project.project_slug}>
-			<a href={project.project_url} className="project__link" target="_blank">
-			{image && <GatsbyImage image={image} className="project__image" alt={project.image_caption} />}
-			
-			<p className="project__publication">{project.publication}</p>
-			<div className="project__name-wrapper">
-				<a href={project.project_url} className="project__name">{project.project_name}</a>
-			</div>
+		<a href={project.project_url} className="project__link" target="_blank">
+			<div className={slug} key={project.project_slug}>
+				
+				{image && <GatsbyImage image={image} className="project__image" alt={project.image_caption} />}
+				
+				<p className="project__publication">{project.publication}</p>
+				<div className="project__name-wrapper">
+					<a href={project.project_url} className="project__name">{project.project_name}</a>
+				</div>
 
-			<p className="project__date">Published {project.publish_date}</p>
-			<p className="project__desc">{project.project_description}</p>
-			</a>
-		</div>
+				<p className="project__date">Published {project.publish_date}</p>
+				<p className="project__desc">{project.project_description}</p>
+			</div>
+		</a>
 	);
 };

@@ -2,8 +2,6 @@ import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
-
-// import Dropdown from '../components/Dropdown';
 import Button from '../components/Button';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -19,7 +17,8 @@ const HeaderStyles = styled.header`
 
 	color: #fff;
 	background: #000;
-	height: calc(100vh - 79.8px);
+	height: calc(100vh - 91.59px);
+	// height: calc(100vh - 79.8px);
 	position: relative;
 
 	.header__info {
@@ -83,7 +82,8 @@ const HeaderStyles = styled.header`
 		top: 0;
 		left: 0;
 		background-color: rgba(0, 0, 0, .4);
-		height: calc(100vh - 79.8px);
+		height: calc(100vh - 91.59px);
+		// height: calc(100vh - 79.8px);
 		width: 100%;
 		z-index: 99;
 	}
@@ -111,8 +111,6 @@ export default function Header() {
 	const imageData = data.desktop.childImageSharp.fluid;
 
 	return (
-		<>
-		{/* <Dropdown /> */}
 		<HeaderStyles>
 			<div className="overlay"></div>
 			<div className="header__info">
@@ -131,10 +129,9 @@ export default function Header() {
 			<BackgroundImage
 				Tag="div"
 				fluid={imageData}
-				style={{ height: 'calc(100vh - 79.8px)' }}
+				style={{ height: 'calc(100vh - 91.59px)' }}
 			>
 			</BackgroundImage>
 		</HeaderStyles>
-		</>
 	);
 }
