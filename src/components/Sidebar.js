@@ -54,7 +54,7 @@ export default function Sidebar() {
 			<ul>
 				<li><AnchorLink to="#special-presentation" className="sidebar__link">Special presentation</AnchorLink></li>
 				<li><AnchorLink to="#interactive-graphics" className="sidebar__link">Interactive graphics</AnchorLink></li>
-				<li><AnchorLink to="#news-app-database" className="sidebar__link">News apps / databases</AnchorLink></li>
+				<li><AnchorLink to="#news-apps-databases" className="sidebar__link">News apps / databases</AnchorLink></li>
 			</ul>
 		</SidebarStyles>
 	);

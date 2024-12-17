@@ -12,17 +12,6 @@ const NavStyles = styled.nav`
 	padding-top: 16px;
 	padding-bottom: 16px;
 
-	.dropdown {
-		display: none;
-		// position: absolute;
-		// top: 0;
-		// right: 0;
-		// z-index: 25;
-		// width: 100%;
-		// height: 7px;
-		// background: #f6a302;
-	}
-
 	.link {
 		margin-right: 48px;
 		text-decoration: none;
@@ -69,7 +58,6 @@ const NavStyles = styled.nav`
 		border-radius: 3px;
 		border: 1px solid #fff;
 		color: #fff;
-		// margin-left: 16px;
 		margin-right: 0;
 		padding: 16px;
 
@@ -161,8 +149,6 @@ const NavStyles = styled.nav`
 export default function Nav() {
 	return (
 		<NavStyles>
-			<div className="dropdown"></div>
-			<Link to="#main" className="skip" tabIndex="-1">Skip to main content</Link>
 			<Link to="/" className="link link-name">Andrew Nguyen</Link>
 
 			<div className="link__group">

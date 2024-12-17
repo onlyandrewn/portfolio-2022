@@ -7,7 +7,6 @@ const ProjectStyles = styled.div`
 
 	.category__header {
 		font-family: "Graphik";
-		// margin: 0;
 		margin-left: 48px;
 		margin-right: 48px;
 		margin-top: 48px;
@@ -23,8 +22,6 @@ const ProjectStyles = styled.div`
 	.category__projects {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		// grid-row-gap: 32px;
-		// grid-column-gap: 32px;
 		grid-row-gap: 16px;
 		grid-column-gap: 16px;
 		margin: 48px;
@@ -35,7 +32,6 @@ const ProjectStyles = styled.div`
 		border: 3px solid transparent;
 		border-radius: 3px;
 		padding: 16px;
-		// padding: 8px;
 
 		&:hover,
 		&:focus,
@@ -44,16 +40,6 @@ const ProjectStyles = styled.div`
 			cursor: pointer;
 		}
 	}
-	
-	// .project__type {
-	// 	font-family: "Graphik";
-	// 	margin: 0;
-	// 	margin-bottom: 16px;
-	// 	font-size: 12px;
-	// 	text-transform: uppercase;
-	// 	color: #0C65F6;
-	// 	font-weight: 700;
-	// }
 
 	.project__image {
 		background: #ddd;
@@ -65,7 +51,6 @@ const ProjectStyles = styled.div`
 		font-weight: 700;
 		font-size: 32px;
 		margin: 0;
-		// color: #0C65F6;
 		color: #000;
 		display: inline;
 		text-decoration: none;
@@ -88,20 +73,6 @@ const ProjectStyles = styled.div`
 		&:visited {
 			color: #000;
 		}
-		// font-family: "Graphik Bold";
-		// font-weight: 700;
-		
-		// text-transform: uppercase;
-		// font-size: 12px;
-		// text-decoration: none;
-		// padding-bottom: 2px;
-		// color: #000;
-		// border-bottom: 2px solid #000;
-
-		// &:hover {
-		// 	color: #0074D9;
-		// 	border-bottom: 2px solid #0C65F6;
-		// }
 	}
 
 	.project__info {
@@ -126,11 +97,9 @@ const ProjectStyles = styled.div`
 	}
 
 	.project__date {
-		// font-family: "Tiempos Text";
 		font-family: "Graphik Regular";
 		margin: 0;
 		margin-top: 8px;
-		// font-style: italic;
 	}
 
 	.project__accolade {
@@ -154,7 +123,6 @@ const ProjectStyles = styled.div`
 		padding-right: 8px;
 		padding-left: 8px;
 		border-radius: 3px;
-		// max-width: 35px;
 		position: relative;
 		top: 12px;
 		left: 12px;
@@ -170,10 +138,6 @@ const ProjectStyles = styled.div`
 		}
 	}
 
-	@media (max-width: 1024px) {
-
-	}
-
 	@media (max-width: 768px) {
 		.category__projects {
 			grid-template-columns: 1fr;
@@ -186,30 +150,18 @@ const ProjectStyles = styled.div`
 		}
 	}
 
-	@media (max-width: 640px) {
-
-	}
-
 	@media (max-width: 480px) {
 		.project {
 			padding: 12px;
 		}
 
+		.project__name {
+			font-size: 24px;
+		}
+
 		.project__desc {
 			font-size: 16px;
 		}
-
-	}
-
-	@media (max-width: 400px) {
-
-	}
-
-	@media (max-width: 360px) {
-
-	}
-
-	@media (max-width: 320px) {
 
 	}
 `;

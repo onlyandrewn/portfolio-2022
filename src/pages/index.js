@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import SEO from "../components/seo";
+import Seo from "../components/Seo";
 import Header from '../components/Header';
 
 export default function IndexPage({ data }) {
@@ -8,7 +8,7 @@ export default function IndexPage({ data }) {
 
   return (
     <>
-      <SEO 
+      <Seo 
         title={title} 
         description={description}
         author={author}

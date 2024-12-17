@@ -1,18 +1,21 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Project from "../components/Project";
 import Sidebar from "../components/Sidebar";
 import projects from "../content/projects.json";
 import ProjectStyles from "../styles/ProjectStyles";
-// import SEO from "../components/seo";
+import Seo from "../components/Seo";
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ data }) {
+  const { author, image, url, twitterHandle } = data.site.siteMetadata;
+
   const sortedProjects = projects.sort((a, b) => {
     const dateA = new Date(a.publish_date_num);
     const dateB = new Date(b.publish_date_num);
     return dateB - dateA;
   })
 
-  const categoryOrder = ["Special presentation", "Interactive graphics", "News app / database"];
+  const categoryOrder = ["Special presentation", "Interactive graphics", "News apps / databases"];
   const groupedProjects = {};
 
   projects.forEach(project => {
@@ -30,12 +33,14 @@ export default function ProjectsPage() {
 
   return (
     <>
-    {/* <SEO 
-      title="Andrew Nguyen | Projects"
-      description="Explore work from Andrew Nguyen. He specializes in special presentations, interactive graphics and news apps."
-      image="/header.jpeg"
-      url="https://andrewnguyen.ca/projects/"
-    /> */}
+    <Seo
+      title="Andrew Nguyen | Projects" 
+      description="Explore projects from Andrew Nguyen, who specializes in creating special presentations, interactive graphics and news apps."
+      author={author}
+      image={`${url}${image}`}
+      url={`${url}projects/`}
+      twitterHandle={twitterHandle} 
+    />
 
     <ProjectStyles>
     <div className="test">
@@ -66,3 +71,16 @@ export default function ProjectsPage() {
     </>
   );
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        author
+        image
+        url
+        twitterHandle
+      }
+    }
+  }
+`;

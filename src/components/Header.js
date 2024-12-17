@@ -18,7 +18,6 @@ const HeaderStyles = styled.header`
 	color: #fff;
 	background: #000;
 	height: calc(100vh - 91.59px);
-	// height: calc(100vh - 79.8px);
 	position: relative;
 
 	.header__info {
@@ -83,7 +82,6 @@ const HeaderStyles = styled.header`
 		left: 0;
 		background-color: rgba(0, 0, 0, .4);
 		height: calc(100vh - 91.59px);
-		// height: calc(100vh - 79.8px);
 		width: 100%;
 		z-index: 99;
 	}
@@ -134,13 +132,9 @@ const HeaderStyles = styled.header`
 	}
 
 	@media (max-width: 360px) {
-
 	}
 
 	@media (max-width: 320px) {
-		// h1 {
-		// 	font-size: 24px;
-		// }
 	}
 `;
 
