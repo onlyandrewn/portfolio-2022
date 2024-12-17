@@ -88,9 +88,59 @@ const HeaderStyles = styled.header`
 		z-index: 99;
 	}
 
+	@media (max-width: 1024px) {
+
+	}
+
 	@media (max-width: 768px) {
-		border: 1px solid red;
-		padding: 36px;
+
+	}
+
+	@media (max-width: 640px) {
+		h1 {
+			font-size: 48px;
+		}
+
+		.header__desc {
+			font-size: 16px;
+		}
+	}
+
+	@media (max-width: 480px) {
+
+	}
+
+	@media (max-width: 400px) {
+		h1 {
+			font-size: 32px;
+			margin-bottom: 16px;
+		}
+
+		.header__availability,
+		.header__availability-text,
+		.header__circle,
+		.photo__credit {
+			display: none;
+		}
+
+		.header__desc {
+			margin-bottom: 0;
+		}
+
+		.header__info {
+			width: 100%;
+			max-width: none;
+		}
+	}
+
+	@media (max-width: 360px) {
+
+	}
+
+	@media (max-width: 320px) {
+		// h1 {
+		// 	font-size: 24px;
+		// }
 	}
 `;
 

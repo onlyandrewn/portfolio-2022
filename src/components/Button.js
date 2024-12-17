@@ -17,6 +17,28 @@ const ButtonStyles = styled.button`
 	&:visited {
 		color: #fff;
 	}
+
+	@media (max-width: 1024px) {
+
+	}
+
+	@media (max-width: 768px) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	@media (max-width: 640px) {
+
+	}
+
+	@media (max-width: 480px) {
+
+	}
+
+	@media (max-width: 400px) {
+		display: none;
+
+	}
 `;
 
 export default function Button() {
