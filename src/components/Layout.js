@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import 'normalize.css';
+import '/src/styles/global.css';
 
 import Nav from './Nav';
 import GlobalStyles from '../styles/GlobalStyles';

@@ -3,7 +3,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import styled from 'styled-components';
 
 const SidebarStyles = styled.aside`
-	font-family: "Graphik";
+	font-family: "Graphik Bold";
 	font-weight: 700;
 	margin-top: 48px;
 	margin-left: 48px;
@@ -32,6 +32,7 @@ const SidebarStyles = styled.aside`
 		font-size: 16px;
 		text-decoration: none;
 		color: #000;
+		font-family: "Graphik Bold";
 
 		&:visited {
 			color: #000;

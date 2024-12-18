@@ -6,7 +6,7 @@ const ProjectStyles = styled.div`
 	}
 
 	.category__header {
-		font-family: "Graphik";
+		font-family: "Graphik Bold";
 		margin-left: 48px;
 		margin-right: 48px;
 		margin-top: 48px;

@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import Button from '../components/Button';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa'
 
 const HeaderStyles = styled.header`
 	h1 {
@@ -33,11 +33,11 @@ const HeaderStyles = styled.header`
 	.header__desc {
 		margin-bottom: 24px;
 		padding-bottom: 5px;
-		// max-width: 500px;
 		width: 88%;
 		color: #fff;
 		font-size: 22px;
-		font-family: Graphik-Regular;
+		font-family: "Graphik Regular";
+		font-weight: 400;
 		line-height: 1.3;
 	}
 
@@ -50,7 +50,8 @@ const HeaderStyles = styled.header`
 
 	.header__availability-text {
 		font-size: 16px;
-		font-family: Graphik-Regular;
+		font-family: "Graphik Regular";
+		font-weight: 400;
 	}
 
 	.header__circle {
@@ -211,7 +212,6 @@ export default function Header() {
 
 	// Responsive Background Position Logic
 	const breakpoint640 = useMediaQuery({ maxWidth: 640 });
-	const breakpoint400 = useMediaQuery({ maxWidth: 400 });
 	const breakpoint360 = useMediaQuery({ maxWidth: 360 });
 
 	// Dynamically update background position
