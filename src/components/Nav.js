@@ -140,10 +140,6 @@ const NavStyles = styled.nav`
 			}
 		}
 	}
-
-	@media (max-width: 320px) {
-
-	}
 `;
 
 export default function Nav() {

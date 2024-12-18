@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 const ButtonStyles = styled.button`
 	font-family: "Graphik Bold";
@@ -13,13 +14,17 @@ const ButtonStyles = styled.button`
     background: #f6a302;
     text-align: left;
     font-size: 12px;
+	// background: transparent;
+	// border: 2px solid #fff;
+
+	&:hover,
+	&:active,
+	&:focus {
+		border: 2px solid ${darken(0.2, "#f6a302")};
+	}
 
 	&:visited {
 		color: #fff;
-	}
-
-	@media (max-width: 1024px) {
-
 	}
 
 	@media (max-width: 768px) {
@@ -27,17 +32,8 @@ const ButtonStyles = styled.button`
 		padding-right: 32px;
 	}
 
-	@media (max-width: 640px) {
-
-	}
-
 	@media (max-width: 480px) {
-
-	}
-
-	@media (max-width: 400px) {
 		display: none;
-
 	}
 `;
 

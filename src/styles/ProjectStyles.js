@@ -162,7 +162,6 @@ const ProjectStyles = styled.div`
 		.project__desc {
 			font-size: 16px;
 		}
-
 	}
 `;
 

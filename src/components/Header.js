@@ -2,6 +2,7 @@ import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 import Button from '../components/Button';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -26,12 +27,13 @@ const HeaderStyles = styled.header`
     	padding-left: 24px;
     	width: 45%;
 		z-index: 100;
+		max-width: 450px;
 	}
 
 	.header__desc {
 		margin-bottom: 24px;
 		padding-bottom: 5px;
-		max-width: 500px;
+		// max-width: 500px;
 		width: 88%;
 		color: #fff;
 		font-size: 22px;
@@ -86,34 +88,81 @@ const HeaderStyles = styled.header`
 		z-index: 99;
 	}
 
-	@media (max-width: 1024px) {
-
-	}
-
-	@media (max-width: 768px) {
-
-	}
-
-	@media (max-width: 640px) {
+	@media (max-width: 1200px) {
 		h1 {
 			font-size: 48px;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		.header__info {
+			max-width: 350px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 16px;
 		}
 
 		.header__desc {
 			font-size: 16px;
+			width: 85%
+		}
+
+		.header__availability-text,
+		.header__circle {
+			font-size: 14px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.header__info {
+			max-width: 275px;
+		}
+
+		h1 {
+			font-size: 32px;
+		}
+
+		.header__desc {
+			// width: 88%
+			margin-bottom: 16px;
+			padding-bottom: 0;
+		}
+
+		.header__availability-text,
+		.header__circle {
+			max-width: 200px;
+		}
+	}
+
+	@media (max-width: 540px) {
+		.header__availability-text,
+		.header__circle {
+			display: none;
+		}
+
+		.header__desc {
+			margin-bottom: 0;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.overlay {
+			height: calc(100vh - 79.8px);
+		}
+
+		h1 {
+			font-size: 24px;
+		}
+
+		.header__info,
+		.photo__credit {
+			bottom: 2%;
 		}
 	}
 
 	@media (max-width: 480px) {
-
-	}
-
-	@media (max-width: 400px) {
-		h1 {
-			font-size: 32px;
-			margin-bottom: 16px;
-		}
-
 		.header__availability,
 		.header__availability-text,
 		.header__circle,
@@ -123,18 +172,24 @@ const HeaderStyles = styled.header`
 
 		.header__desc {
 			margin-bottom: 0;
+			width: 100%;
 		}
 
 		.header__info {
-			width: 100%;
-			max-width: none;
+			max-width: 400px;
+			width: calc(100vw - 60px);
+			bottom: 2%;
 		}
 	}
 
 	@media (max-width: 360px) {
-	}
+		.overlay {
+			height: calc(100vh - 68.8px);
+		}
 
-	@media (max-width: 320px) {
+		.header__info {
+			bottom: 1%;
+		}
 	}
 `;
 
@@ -153,6 +208,23 @@ export default function Header() {
 	`);
 
 	const imageData = data.desktop.childImageSharp.fluid;
+
+	// Responsive Background Position Logic
+	const breakpoint640 = useMediaQuery({ maxWidth: 640 });
+	const breakpoint400 = useMediaQuery({ maxWidth: 400 });
+	const breakpoint360 = useMediaQuery({ maxWidth: 360 });
+
+	// Dynamically update background position
+	let backgroundPosition = "center bottom";
+	let height = "calc(100vh - 91.59px)";
+
+	if (breakpoint640) {
+		height = "calc(100vh - 79.8px)";
+	}
+
+	if (breakpoint360) {
+		height = "calc(100vh - 68.8px)";
+	}
 
 	return (
 		<HeaderStyles>
@@ -173,7 +245,10 @@ export default function Header() {
 			<BackgroundImage
 				Tag="div"
 				fluid={imageData}
-				style={{ height: 'calc(100vh - 91.59px)' }}
+				style={{ 
+					height: height,
+					backgroundPosition: backgroundPosition 
+				}}
 			>
 			</BackgroundImage>
 		</HeaderStyles>
